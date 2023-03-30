@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project analyze_struts_framework="false" cma_compute_limit="0" cma_memory_limit="0" default_configuration_name="Configuration 1" file_extension_set_name="java" import_struts_validation="false" language_type="2" ltd_name="java" name="SimpleIOT" perform_cma="true" version="7.0.0">
+	<Configuration jdk_name="IBM JDK 1.5" name="Configuration 1"/>
+	<Source exclude="false" path="." web="false"/>
+	<Properties>
+		<Property name="clean" value="true"/>
+		<Property name="correct_packages" value="true"/>
+		<Property name="source_staging" value="true"/>
+	</Properties>
+	<ProjectScanSettings/>
+</Project>

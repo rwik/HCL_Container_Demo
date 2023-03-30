@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project default_configuration_name="Configuration 1" fallback_default_config_name="Configuration 1" file_encoding="ISO-8859-1" ltd_name="java" name="project1" version="10.0.5">
+	<Configuration jdk_name="AdoptOpenJDK 11 64 bit" name="Configuration 1"/>
+	<Source exclude="false" path=".\TestCase_IOT_Array.java" web="false"/>
+	<Source exclude="false" path=".\TestCase_IOT_Branching.java" web="false"/>
+	<Source exclude="false" path=".\TestCase_IOT_Instance.java" web="false"/>
+	<Source exclude="false" path=".\TestCase_IOT_Instance_Assigns.java" web="false"/>
+	<Source exclude="false" path=".\TestCase_IOT_Instance_Val_Confidence.java" web="false"/>
+	<Source exclude="false" path=".\TestCase_IOT_Instance_Val_Encode.java" web="false"/>
+	<Source exclude="false" path=".\TestCase_IOT_List.java" web="false"/>
+	<Source exclude="false" path=".\TestCase_IOT_Looping.java" web="false"/>
+	<Source exclude="false" path=".\TestCase_IOT_Lost_Instance.java" web="false"/>
+	<Source exclude="false" path=".\TestCase_IOT_Lost_MemberTaint.java" web="false"/>
+	<Source exclude="false" path=".\TestCase_IOT_Lost_XFile_Part1.java" web="false"/>
+	<Source exclude="false" path=".\TestCase_IOT_Lost_XFile_Part2.java" web="false"/>
+	<Source exclude="false" path=".\TestCase_IOT_MediumCallStack.java" web="false"/>
+	<Source exclude="false" path=".\TestCase_IOT_MemberTaint.java" web="false"/>
+	<Source exclude="false" path=".\TestCase_IOT_MemberTaint_OutParam.java" web="false"/>
+	<Source exclude="false" path=".\TestCase_IOT_OverlapTrace.java" web="false"/>
+	<Source exclude="false" path=".\TestCase_IOT_Recursion.java" web="false"/>
+	<Source exclude="false" path=".\TestCase_IOT_Simple_Validation.java" web="false"/>
+	<Source exclude="false" path=".\TestCase_IOT_Static.java" web="false"/>
+	<Source exclude="false" path=".\TestCase_IOT_Static_Assigns.java" web="false"/>
+	<Source exclude="false" path=".\TestCase_IOT_UserValidation.java" web="false"/>
+	<Source exclude="false" path=".\TestCase_IOT_UserValidation2.java" web="false"/>
+	<Source exclude="false" path=".\TestCase_IOT_XFile_Part1.java" web="false"/>
+	<Source exclude="false" path=".\TestCase_IOT_XFile_Part2.java" web="false"/>
+	<Source exclude="false" path=".\TestCase_IOT_XFile_Val_Part1.java" web="false"/>
+	<Properties>
+		<Property name="clean" value="true"/>
+		<Property name="source_staging" value="true"/>
+		<Property name="correct_packages" value="true"/>
+	</Properties>
+	<ProjectScanSettings/>
+</Project>
