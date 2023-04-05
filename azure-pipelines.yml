@@ -18,7 +18,7 @@ steps:
   inputs:
     script: |
       echo "Structure of work folder of this pipeline:"
-      tree $(Agent.WorkFolder)\1 /f
+      ls $(Agent.WorkFolder)/s
       
 - task: Docker@1
   displayName: 'Run an image'
