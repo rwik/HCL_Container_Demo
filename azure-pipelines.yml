@@ -22,7 +22,7 @@ steps:
     command: 'Run an image'
     arguments: '--rm'
     imageName: 'hclcr.io/appscan/appscan-src-cli:10.2.0 '
-    volumes: '/home/azureuser:/wa'
+    volumes: '$(Agent.BuildDirectory)/s:/wa'
     envVars: |
      AS_INSTALL_MODE=standalone
      AS_LICENSE_TYPE=CLS
