@@ -17,7 +17,7 @@ steps:
 - task: CmdLine@2
   inputs:
     script: |
-      echo "Structure of work folder of this pipeline:"
+      echo "DEBUG : Structure of work folder of this pipeline:"
       ls $(Agent.WorkFolder)/1/s
       
 - task: Docker@1
@@ -28,7 +28,7 @@ steps:
     command: 'Run an image'
     arguments: '--rm'
     imageName: 'hclcr.io/appscan/appscan-src-cli:10.2.0 '
-    volumes: '$(Agent.BuildDirectory)/1/s:/wa'
+    volumes: '$(Agent.WorkFolder)/1/s:/wa'
     envVars: |
      AS_INSTALL_MODE=standalone
      AS_LICENSE_TYPE=CLS
@@ -44,7 +44,4 @@ steps:
     action: 'Run a Docker command'
     customCommand: 'system prune -a -f'
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+
