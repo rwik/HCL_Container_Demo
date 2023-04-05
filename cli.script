@@ -1,6 +1,4 @@
 login
-cd /wa
-ls
-oa /wa/simpleIOT/SimpleIOT.paf
+oa /wa/SimpleIOT.paf
 scan
 logout
