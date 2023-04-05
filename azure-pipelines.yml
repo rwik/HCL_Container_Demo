@@ -14,17 +14,22 @@ pool:
 #  displayName: 'Run a one-line script'
 
 steps:
-- task: Docker@2
-  displayName: 'Run Image'
+- task: Docker@1
+  displayName: 'Run an image'
   inputs:
-    containerRegistry: 'MyConnection_Rwik'
-    command: run
-    arguments: ' --rm --env-file /home/azureuser/env.list -v $(Agent.BuildDirectory)/s:/wa  hclcr.io/appscan/appscan-src-cli:10.2.0 script /wa/cli.script'
-  env:
-    AS_INSTALL_MODE: standalone
-    AS_LICENSE_TYPE: CLS
-    AS_LICENSE_SERVER_ID: PUGAU36NN7RX
-    AS_LICENSE_SERVER: hclsoftware
+    containerregistrytype: 'Container Registry'
+    dockerRegistryEndpoint: 'MyConnection_Rwik'
+    command: 'Run an image'
+    arguments: '--rm'
+    imageName: 'hclcr.io/appscan/appscan-src-cli:10.2.0 '
+    volumes: '/home/azureuser:/wa'
+    envVars: |
+     AS_INSTALL_MODE=standalone
+     AS_LICENSE_TYPE=CLS
+     AS_LICENSE_SERVER_ID=PUGAU36NN7RX
+     AS_LICENSE_SERVER=hclsoftware
+    containerCommand: 'script /wa/cli.script'
+    runInBackground: false
 - task: Docker@0
   displayName: Clean
   inputs:
