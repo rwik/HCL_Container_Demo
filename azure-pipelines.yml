@@ -18,8 +18,7 @@ steps:
   inputs:
     script: |
       echo "DEBUG : Structure of work folder of this pipeline:"
-      ls $(Agent.WorkFolder)/1/s
-      
+      ls $(Agent.WorkFolder)/1/s/simpleIOT      
 - task: Docker@1
   displayName: 'Run an image'
   inputs:
