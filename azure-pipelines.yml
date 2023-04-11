@@ -19,7 +19,7 @@ steps:
   inputs:
     script: |
       echo "DEBUG : Structure of work folder of this pipeline:"
-      ls $(Agent.WorkFolder)/1/s/simpleIOT      
+      ls $(Agent.WorkFolder)/4/s/simpleIOT      
 - task: Docker@1
   displayName: 'Run an image'
   inputs:
@@ -28,7 +28,7 @@ steps:
     command: 'Run an image'
     arguments: '--rm'
     imageName: 'hclcr.io/appscan/appscan-src-cli:10.2.0 '
-    volumes: '$(Agent.WorkFolder)/1/s:/wa'
+    volumes: '$(Agent.WorkFolder)/4/s:/wa'
     envVars: |
      AS_INSTALL_MODE=standalone
      AS_LICENSE_TYPE=CLS
