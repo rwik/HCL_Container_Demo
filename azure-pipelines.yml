@@ -18,8 +18,8 @@ steps:
 - task: CmdLine@2
   inputs:
     script: |
-      echo "DEBUG : Structure of work folder of this pipeline:"
-      ls $(Agent.WorkFolder)/4/s/simpleIOT      
+      #echo "DEBUG : Structure of work folder of this pipeline:"
+      #ls $(Agent.WorkFolder)/4/s/simpleIOT      
 - task: Docker@1
   displayName: 'Run an image'
   inputs:
@@ -34,7 +34,8 @@ steps:
      AS_LICENSE_TYPE=CLS
      AS_LICENSE_SERVER_ID=PUGAU36NN7RX
      AS_LICENSE_SERVER=hclsoftware
-    containerCommand: 'script /wa/cli.script'
+    #containerCommand: 'script /wa/cli.script'
+    containerCommand: 'script /wa/CLI_jspWIKI.script'
     #containerCommand: '/bin/sh -c "ls /wa;" '
     runInBackground: false
 - task: Docker@0
