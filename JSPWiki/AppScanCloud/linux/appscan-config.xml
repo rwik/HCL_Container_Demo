@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+  <Targets>
+    <Target path="../../JSPWiki/JSPWiki.war" /> <!-- The path to your target -->
+    <!-- You can add more targets with the <Target> tag. -->
+  </Targets>
+  <Settings />
+  <TargetSettings>
+		<Target path="../../JSPWiki/JSPWiki.war">
+			    <CustomBuildInfo jsp_compiler="Default Tomcat JSP Compiler" />
+
+		</Target>
+   </TargetSettings>
+
+</Configuration>
