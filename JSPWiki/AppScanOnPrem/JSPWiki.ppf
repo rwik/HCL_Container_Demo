@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project analyze_struts_framework="true" cma_behavior="default" cma_compute_limit="50" default_configuration_name="Configuration 1" file_encoding="ISO-8859-1" file_extension_set_name="java" import_struts_validation="false" jsp_compiler_info_name="Jasper 3 (Tomcat 5)" jsp_compiler_type="1" language_type="2" ltd_name="java" name="JSPWiki" perform_cma="true" version="8.0.0" web_context_root_path="../JSPWiki/war">
+	<Configuration class_path="../JSPWiki/lib/xmlrpc.jar;../JSPWiki/lib/servlet.jar;../JSPWiki/lib/oscache.jar;../JSPWiki/lib/oro.jar;../JSPWiki/lib/multipartrequest.jar;../JSPWiki/lib/log4j.jar;../JSPWiki/lib/junit.jar;../JSPWiki/lib/j2ee.jar" exclude_from_build="false" inherit_from_project="false" jdk_name="IBM JDK 1.5" name="Configuration 1"/>
+	<Source exclude="false" path="../JSPWiki/src" web="false"/>
+	<Source exclude="false" path="../JSPWiki/tests" web="false"/>
+	<Source exclude="false" path="../JSPWiki/war" web="true"/>
+	<Source exclude="true" path="../JSPWiki/war/templates" web="true"/>
+	<Properties>
+		<Property name="clean" value="true"/>
+		<Property name="correct_packages" value="true"/>
+		<Property name="source_staging" value="true"/>
+	</Properties>
+	<ProjectScanSettings filter_findings_to_project="false"/>
+</Project>

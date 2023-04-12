@@ -1,0 +1,4 @@
+name0		= JSPWiki
+ppf0		= JSPWiki.paf
+timeout0	= 5000
+benchmarkPrefix0 = JSPWiki_
