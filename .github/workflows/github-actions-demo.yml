@@ -11,11 +11,11 @@ jobs:
       - name: Load docker image
         uses: docker://hclcr.io/appscan/appscan-src-cli:10.2.0
         
-      - name: Run docker command for SAST scan
-        uses: docker run --rm --env-file /vj_space/env.list -v /vj_space/wa:/wa hclcr.io/appscan/appscan-src-cli:10.2.0  script cli.script
+      #- name: Run docker command for SAST scan
+      #  uses: docker run --rm --env-file /vj_space/env.list -v /vj_space/wa:/wa hclcr.io/appscan/appscan-src-cli:10.2.0  script cli.script
 
 
         
-      - name: Remove docker image loaded in this action
-        uses: docker rmi hclcr.io/appscan/appscan-src-cli:10.2.0     
+      #- name: Remove docker image loaded in this action
+      #  uses: docker rmi hclcr.io/appscan/appscan-src-cli:10.2.0     
         
