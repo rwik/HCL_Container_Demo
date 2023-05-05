@@ -9,7 +9,10 @@ jobs:
         uses: actions/checkout@v3
         
       - name: Load docker image
-        uses: docker://hclcr.io/appscan/appscan-src-cli:10.2.0
+        uses: docker://docker.io/library/alpine:latest
+        
+      #- name: Load docker image
+      #  uses: docker://hclcr.io/appscan/appscan-src-cli:10.2.0
         
       #- name: Run docker command for SAST scan
       #  uses: docker run --rm --env-file /vj_space/env.list -v /vj_space/wa:/wa hclcr.io/appscan/appscan-src-cli:10.2.0  script cli.script
